@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body, button, input, select, textarea {
+	font-family: 'Poppins', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+:root {
+	--dark-blue: #1d1d1d;
+  --light-grey: #BFBFC1;
+}
+
+h2, h4 {
+  margin: 4px;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.iphone-container {
+  width: 300px;
+  height: 600px;
+  border-radius: 45px;
+  border: 20px solid #111;
+  background: var(--dark-blue);
+  position: relative;
+  color: #FFF;
+  text-align: center;
+  padding: 40px 8px 16px;
+}
+
+.iphone-container .notch {
+  width: 150px;
+  height: 20px;
+  background: #111;
+  border-radius: 0 0 30px 30px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 75px);
+}
+
+.iphone-container .iphone-menu {
+  width: 76px;
+  background: var(--light-grey);
+  height: 1.5px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 38px);
+}
